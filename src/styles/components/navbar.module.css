@@ -1,0 +1,67 @@
+.navbar {
+	background-color: black;
+	width: 100%;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.links {
+	text-transform: uppercase;
+	color: #7f12b9;
+}
+
+.links a:link {
+	text-decoration: none;
+}
+
+.links a:hover {
+	color: #f328e7;
+}
+
+.itemcount {
+	background-color: #f328e7;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 15%;
+	top: 4%;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	vertical-align: text-top;
+	font-size: 75%;
+}
+
+@media only screen and (max-width: 600px) {
+	.links {
+		font-size: 13px;
+	}
+	.itemcount {
+		right: 8%;
+		top: 3.5%;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+	.itemcount {
+		right: 9%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.itemcount {
+		right: 12%;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.itemcount {
+		right: 13%;
+	}
+}

@@ -1,0 +1,6 @@
+body {
+	background: linear-gradient(to bottom, #28053e, #f328e7, #530685);
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,166 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: Georgia, serif;
+	background-color: white;
+	width: 90%;
+	height: 700px;
+}
+
+.container {
+	width: 100%;
+	height: 600px;
+}
+
+.top {
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+.left {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.bold {
+	color: #910808;
+	font-weight: bold;
+	font-size: 30px;
+	margin: 40px;
+}
+
+.description {
+	width: 80%;
+	font-size: 20px;
+	line-height: 35px;
+}
+
+.right {
+	width: 70%;
+	display: flex;
+}
+
+.bottom {
+	display: flex;
+	width: 100%;
+	height: 100px;
+}
+
+.botleft {
+	width: 20%;
+	background-color: black;
+	color: #910808;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.botright {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.collections {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid black;
+}
+
+.collections:hover {
+	background-color: #d5d3d6;
+}
+
+@media only screen and (max-width: 600px) {
+	.top {
+		flex-direction: column-reverse;
+		height: 100%;
+	}
+	.bold {
+		display: none;
+	}
+	.description {
+		font-size: 16px;
+		line-height: 30px;
+		width: 90%;
+	}
+	.left {
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		height: 30%;
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+		height: 70%;
+		justify-content: center;
+	}
+	.bottom {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+	.top {
+		flex-direction: column-reverse;
+		height: 100%;
+	}
+	.bottom {
+		display: none;
+	}
+	.bold {
+		margin: 20px;
+	}
+	.description {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.left {
+		flex-direction: row;
+		justify-content: center;
+		height: 30%;
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+		height: 70%;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.bold {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.description {
+		width: 90%;
+		line-height: 30px;
+	}
+	.left {
+		width: 40%;
+	}
+	.right {
+		width: 60%;
+	}
+	.botleft {
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.bold {
+		margin-bottom: 10px;
+	}
+	.description {
+		line-height: 30px;
+	}
+}
