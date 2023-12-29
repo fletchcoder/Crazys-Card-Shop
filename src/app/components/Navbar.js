@@ -32,9 +32,9 @@ export default function Navbar() {
 				</li>
 				<li className={styles.links}>
 					<Link href="/cart">Cart</Link>
+					<span className={styles.itemcount}>{getCartQuantity()}</span>
 				</li>
 			</ul>
-			<span className={styles.itemcount}>{getCartQuantity()}</span>
 		</div>
 	);
 }
